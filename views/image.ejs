@@ -1,0 +1,16 @@
+
+<html>
+<head>
+    <title>Upload Image</title>
+</head>
+<body>
+    <div style="display: flex;flex-wrap: wrap;gap: 20px;">
+        <% images.forEach(image => { %>
+            <div style="margin-bottom: 20px;">
+                <h3><%= image.filename %></h3>
+                <img src="<%= image.imagePath %>" alt="<%= image.originalName %>" style="width: 150px;height: 15    0px;">
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>
